@@ -18,4 +18,7 @@ rm -r /root/.cache
 # Install serverless framework
 RUN npm install -g serverless
 
+# Install aws cli
+RUN pip install awscli --upgrade
+
 WORKDIR /home
