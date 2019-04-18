@@ -6,6 +6,9 @@ RUN apk update
 # Install bash
 RUN apk add --no-cache bash
 
+# Install jq
+RUN apk add jq
+
 # Install node and npm
 RUN apk add nodejs nodejs-npm
 
