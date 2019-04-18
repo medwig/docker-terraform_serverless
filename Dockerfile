@@ -3,6 +3,9 @@ FROM hashicorp/terraform:0.11.13
 
 RUN apk update 
 
+# Install bash
+RUN apk add --no-cache bash
+
 # Install node and npm
 RUN apk add nodejs nodejs-npm
 
